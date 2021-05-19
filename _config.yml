@@ -1,13 +1,22 @@
+---
+title: Jekyll Blog
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 name: My Blog
-url: "https://oksanalutsyk.github.io/jekyll-blog"
+url: https://oksanalutsyk.github.io/jekyll-blog
 baseurl: "/jekyll-blog"
 sass:
   sass_dir: _sass
 plugins:
-  - jekyll-feed
-  - jekyll-admin
-
+- jekyll-feed
+- jekyll-admin
 jekyll_admin:
-  - staticfiles
-  - datafiles
-  - configuration
+- staticfiles
+- datafiles
+- configuration
