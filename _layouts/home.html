@@ -5,10 +5,11 @@ layout: default
 {{ content }}
 
 <ul class="my-posts">
-    {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url | prepend:site.baseurl }}">{{ post.title }}</a>
-      <span class="post-description">{{ post.description }}</span>
-    </li>
+  {% for post in site.posts %}
+  <li>
+    <a
+      href="{% if site.baseurl == "/" %}{{ post.url }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}">{{ post.title }}</a>
+    <span class="post-description">{{ post.description }}</span>
+  </li>
   {% endfor %}
 </ul>
