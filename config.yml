@@ -1,5 +1,0 @@
-name: My Blog
-url: "https://oksanalutsyk.github.io/jekyll-blog"
-baseurl: "/jekyll-blog"
-sass:
-    sass_dir: _sass
